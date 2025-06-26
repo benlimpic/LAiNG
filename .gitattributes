@@ -1,0 +1,33 @@
+# === Default text handling ===
+* text=auto
+
+# === Line endings ===
+/mvnw text eol=lf
+*.sh text eol=lf
+*.cmd text eol=crlf
+
+# === Binary files ===
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.pdf binary
+*.eot binary
+*.ttf binary
+*.woff binary
+*.woff2 binary
+
+# === Export-ignore build artifacts ===
+/frontend/dist/* export-ignore
+/backend/target/* export-ignore
+
+# === Merge strategy for lock and config files ===
+package-lock.json merge=union
+yarn.lock merge=union
+pom.xml merge=union
+*.iml merge=union
+
+# === GitHub language highlighting fixes (optional) ===
+*.jsx linguist-language=JavaScript
+*.yml linguist-language=YAML

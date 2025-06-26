@@ -1,0 +1,86 @@
+# === GLOBAL ===
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+
+# === FRONTEND (Vite + React) ===
+/frontend/node_modules/
+/frontend/dist/
+/frontend/.vite/
+/frontend/.env.local
+/frontend/.env
+/frontend/.DS_Store
+/frontend/.eslintcache
+
+# === BACKEND (Spring Boot) ===
+/backend/target/
+/backend/.env
+/backend/*.log
+/backend/*.class
+/backend/*.jar
+/backend/*.war
+/backend/*.iml
+/backend/.DS_Store
+
+# === BUILD & WRAPPER ===
+/target/
+/build/
+/.mvn/
+/.mvn/wrapper/maven-wrapper.jar
+/mvnw
+/mvnw.cmd
+
+# === ENV / SECRETS ===
+.env
+.env.*
+.secret
+secrets.*
+
+# === IDE & EDITORS ===
+.vscode/
+.idea/
+*.iml
+*.ipr
+*.iws
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# === OS METADATA ===
+._*
+.Spotlight-V100
+.Trashes
+
+# === LOG FILES ===
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# === JAVA (Spring Tool Suite) ===
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+# === NETBEANS ===
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+# === VS CODE (partial allow) ===
+.vscode/*
+!.vscode/extensions.json
+
+# === MISC ===
+HELP.md
+node_modules

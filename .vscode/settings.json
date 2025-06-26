@@ -1,0 +1,29 @@
+{
+  "java.compile.nullAnalysis.mode": "disabled",
+  
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  // Headwind: auto-sort Tailwind classes on save
+  "tailwindCSS.experimental.classRegex": [
+    ["tw`([^`]*)", 1],
+    ["tw=\"([^\"]*)", 1],
+    ["tw={\"([^\"}]*)", 1]
+  ],
+  "headwind.runOnSave": true,
+
+  // Optional: format only relevant files
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+
+}
