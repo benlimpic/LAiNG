@@ -1,10 +1,12 @@
 package com.benlimpic.laing.backend.model;
 
-
-import java.lang.reflect.Array;
-
-import jakarta.persistence.*;
 import lombok.*;
+import jakarta.persistence.Table;
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 
 @Data
 @NoArgsConstructor
@@ -16,11 +18,11 @@ public class TranslationModel {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String sourceLanguage;
-    private String targetLanguage;
-    private ArrayList<String> highlightedText;
+
+    @Column(name = "source_text", nullable = false, columnDefinition = "TEXT")
+    private String sourceText;
+
+    @Column(name = "translated_text", nullable = false, columnDefinition = "TEXT")
     private String translatedText;
-    private String dateCreated;
- 
 
 }

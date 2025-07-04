@@ -1,4 +1,4 @@
-package com.benlimpic.laing.backend.security;
+package com.benlimpic.laing.backend.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
